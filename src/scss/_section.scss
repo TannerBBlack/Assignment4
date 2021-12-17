@@ -1,0 +1,5 @@
+$b-margin: 3rem;
+
+@mixin b-space {
+    margin-bottom: $b-margin;
+}

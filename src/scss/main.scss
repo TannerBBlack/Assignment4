@@ -1,0 +1,109 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "nav";
+
+@import "buttons";
+
+@import "footer";
+
+$nav-pills-link-active-color: $orange;
+
+body {
+    background-color: #181818;
+}
+
+.body {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: #242424;
+    color: #999;
+    font-style: italic;
+}
+
+.long-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    font-family: "Open Sans";
+    width: 100%;
+    // background-color: #242424;
+    margin-bottom: 1rem;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        li {
+            list-style: none;
+            a {
+                color: #fff;
+                text-decoration: none;
+                padding: .8rem 0;
+                text-align: center;
+            }
+            .active {
+                background-color: #f16535;
+            }
+        }
+    }
+}
+
+.gray-background {
+    background-color: #242424;
+}
+
+.nav-link {
+    color: white;
+}
+
+.row {
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    flex-direction: center;
+}
+
+.shrug {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .arm {
+        background: lightsalmon;
+        width: 30px;
+        height: 30px;
+        border-radius: 30%;
+    }
+    .shrug-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: lightsalmon;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+
+
+// figure {
+//     margin: 10px;
+//     width: 100%;
+//     img {
+//         width: 100%;
+//         height: auto;
+//         padding: 10px;
+//     }
+// }

@@ -1,0 +1,9 @@
+$width: 339px;
+$height: 48px;
+$radius: 16px;
+
+@mixin size {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
